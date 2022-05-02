@@ -1,0 +1,31 @@
+{
+  "name": "eazyeats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"node app.js\" \"npm run frontend\"",
+    "frontend": "cd frontend && npm run start",
+    "seed": "node seeds/index.js",
+    "install": "cd frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "fuzzy-search": "^3.2.1",
+    "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.0",
+    "sanitize-html": "^2.6.1"
+  }
+}
